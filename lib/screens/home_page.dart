@@ -10,6 +10,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: (){
+            Navigator.pushNamed(context, '/second');
+          },
+          child: Text("Go to Second Page"),
+          ),)
+      );
   }
 }
